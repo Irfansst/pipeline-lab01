@@ -4,12 +4,14 @@ pipeline {
     stage('Fluffy Build') {
       steps {
         echo 'Fluffy Build'
+        sh 'echo Another Placeholder'
       }
     }
 
     stage('Fluffy Test') {
       steps {
-        echo 'Fluffy Test'
+        sh 'sleep 5'
+        sh 'echo Success!'
       }
     }
 
